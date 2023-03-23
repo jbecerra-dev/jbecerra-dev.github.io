@@ -4,144 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Cafetería Brew Lab</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/estilos.css">
-    <title>Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <header>
-        <div class="contenedor">
-            <nav class="menu">
-                <a href="#">Acerca de</a>
-                <a href="#">Trabajos</a>
-                <a href="#">Contacto</a>
-            </nav>
-            <div class="contenedor-texto">
-                <div class="texto">
-                    <h1 class="nombre">Juan Becerra</h1>
-                    <h2 class="profesion">Desarrollador Web</h2>
+    <div class="contenedor">
+        <header>
+            <div class="barra-menu">
+                <div class="logo">
+                    <img src="/img/logo-menu-white.png" alt="" width="140px">
+                </div>
+                <nav class="menu">
+                    <a href="">Inicio</a>
+                    <a href="">Productos</a>
+                    <a href="">Contacto</a>
+                </nav>
+            </div>
+            <div class="portada">
+                <div class="titular-izq">
+                    <h1>Experimentá el sabor en cada taza</h1>
+                    <p>Cada taza que preparamos es el resultado de un proceso de experimentación y dedicación para garantizar que el sabor y la calidad sean incomparables.</p>
+                    <button id="btn-comprar">Comprar café</button>
+                </div>
+                <div class="foto-cafe">
+                    <img src="/img/cup-coffee.png" alt="">
                 </div>
             </div>
-        </div>
-    </header>
-    <section class="main">
-        <section class="acerca-de">
-            <div class="contenedor">
-                <div class="foto">
-                    <img src=img/perfil.jpg width="150px" alt="Juanma">
+        </header>
+
+        <main>
+            <section class="servicios">
+                <div class="separador-servicios"></div>
+                <h2 class="titulo-servicios">Explora nuestros sabores</h2>
+                <p class="subtitulo-servicios">Tenemos una gran variedad de productos para que experimentes</p>
+                <div class="items">
+                    <article class="item">
+                        <h3>Nuestra variedad de café</h3>
+                        <p>Variedades especiales</p>
+                        <img src="/img/granos-cafe.png" width="115px" alt="">
+                        <button class="btn-item">Explorar</button>
+                    </article>
+                    <article class="item">
+                        <h3>Nuestras delicias</h3>
+                        <p>Acompaña tu café con estas delicias</p>
+                        <img src="img/delicias.png" width="130px" alt="">
+                        <button class="btn-item">Explorar</button>
+                    </article>
+                    <article class="item">
+                        <h3>Nuestro espacio</h3>
+                        <p>Disfruta todo en un espacio pensado para vos</p>
+                        <img src="img/happy.png" width="100px" alt="">
+                        <button class="btn-item">Explorar</button>
+                    </article>
                 </div>
-                <div class="texto">
-                    <h3 class="titulo">Acerca de</h3>
-                    <p>Lorem, ipsum dolor sit amet <span class="bold"> adipisicing elit</span>. Eos est nesciunt fuga odit! Ea, repellendus ullam! Voluptate, rem. Aut adipisci illo autem <span class="bold">suscipit sit</span> minima voluptatum deleniti ad ipsam voluptatibus.</p>
-                </div>
-            </div>
-        </section>
-        <section class="trabajos">
-            <div class="contenedor"> 
-                <h3 class="titulo">Trabajos
-                </h3>
-                <div class="contenedor-trabajos">
-                    <div class="trabajo">
-                        <div class="thumb">
-                            <img src="img/1.jpg" alt="">
-                        </div>
-                        <div class="descripcion">
-                            <p class="nombre">Lorem Ipsum</p>
-                            <p class="categoria">HTML - CSS - JS</p>
-                        </div>
-                    </div>
-                    <div class="trabajo">
-                        <div class="thumb">
-                            <img src="img/2.jpg" alt="">
-                        </div>
-                        <div class="descripcion">
-                            <p class="nombre">Lorem Ipsum</p>
-                            <p class="categoria">HTML - CSS - JS</p>
-                        </div>
-                    </div>
-                    <div class="trabajo">
-                        <div class="thumb">
-                            <img src="img/3.jpg" alt="">
-                        </div>
-                        <div class="descripcion">
-                            <p class="nombre">Lorem Ipsum</p>
-                            <p class="categoria">HTML - CSS - JS</p>
-                        </div>
-                    </div>
-                    <div class="trabajo">
-                        <div class="thumb">
-                            <img src="img/4.jpg" alt="">
-                        </div>
-                        <div class="descripcion">
-                            <p class="nombre">Lorem Ipsum</p>
-                            <p class="categoria">HTML - CSS - JS</p>
-                        </div>
-                    </div>
-                    <div class="trabajo">
-                        <div class="thumb">
-                            <img src="img/5.jpg" alt="">
-                        </div>
-                        <div class="descripcion">
-                            <p class="nombre">Lorem Ipsum</p>
-                            <p class="categoria">HTML - CSS - JS</p>
-                        </div>
-                    </div>
-                    <div class="trabajo">
-                        <div class="thumb">
-                            <img src="img/6.jpg" alt="">
-                        </div>
-                        <div class="descripcion">
-                            <p class="nombre">Lorem Ipsum</p>
-                            <p class="categoria">HTML - CSS - JS</p>
-                        </div>
-                    </div>
-                    <div class="trabajo">
-                        <div class="thumb">
-                            <img src="img/7.jpg" alt="">
-                        </div>
-                        <div class="descripcion">
-                            <p class="nombre">Lorem Ipsum</p>
-                            <p class="categoria">HTML - CSS - JS</p>
-                        </div>
-                    </div>
-                    <div class="trabajo">
-                        <div class="thumb">
-                            <img src="img/8.jpg" alt="">
-                        </div>
-                        <div class="descripcion">
-                            <p class="nombre">Lorem Ipsum</p>
-                            <p class="categoria">HTML - CSS - JS</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </section>
-    <footer>
-        <section class="contacto">
-            <div class="contenedor">
-                <h3 class="titulo">Contacto</h3>
-                <form action="" class="formulario">
-                    <input type="text" placeholder="Nombre" name="nombre" required>
-                    <input type="email" placeholder="Correo" name="correo" required>
-                    <textarea name="mensaje" placeholder="Mensaje"></textarea>
-                    <input class="boton" type="submit" value="Enviar">
-                </form>
-            </div>
-        </section>
-        <section class="redes-sociales">
-            <div class="contenedor">
-                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                <a href="#" class="github"><i class="fa fa-github"></i></a>
-                <a href="#" class="youtube"><i class="fa fa-youtube-play"></i></a>
-            </div>
-        </section>
-    </footer>
+            </section>
+
+        </main>
+
+
+    </div>
+    
 </body>
 </html>
