@@ -113,7 +113,7 @@ header .portada .foto-cafe {
     rotate: -5deg;
 }
 
-main {
+.contenedor-servicios{
     background: linear-gradient(90deg, var(--colorPrimario) 0%, var(--colorSecundario) 100%);
 }
 
@@ -191,4 +191,51 @@ main {
 
 .servicios .item .btn-item:hover{
     background-color: var(--colorPrimario);
+}
+
+.contenedor-nosotros {
+    background-color: #1d1d1d;
+}
+
+.nosotros {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: auto;
+    align-items: center;
+    width: 80%;
+    display: flex;
+}
+
+.nosotros .descripcion {
+    width: 50%;
+}
+
+.nosotros .descripcion h2, p{
+    color: #e2e2e2;
+}
+
+.nosotros .descripcion h2 {
+    margin-bottom: 10px;
+    line-height: 1;
+    font-size: 50px;
+}
+
+.nosotros .descripcion p{
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.nosotros .foto-brewlab {
+    padding: 20px;
+
+}
+.nosotros .foto-brewlab img {
+    border-radius: 40px;
+    margin-left: 20px;
+    border: #1d1d1d solid 3px;
+    transition: border ease 0.4s;
+}
+
+.nosotros .foto-brewlab img:hover {
+    border: #b8b8b8 solid 3px;
 }
