@@ -29,9 +29,10 @@ body {
     margin: auto;
 }
 
+/*-------------------HEADER---------------------*/
+
 header {
     background: linear-gradient(90deg, var(--colorPrimario) 0%, var(--colorSecundario) 100%);
-
 }
 
 header .barra-menu {
@@ -56,6 +57,7 @@ header .barra-menu .menu a{
     text-decoration: none;
     color: white;
     padding: 0px 10px;
+    transition: ease 0.3s;
 }
 
 header .barra-menu .menu a:hover{
@@ -113,6 +115,8 @@ header .portada .foto-cafe {
     rotate: -5deg;
 }
 
+/*-------------------SERVICIOS---------------------*/
+
 .contenedor-servicios{
     background: linear-gradient(90deg, var(--colorPrimario) 0%, var(--colorSecundario) 100%);
 }
@@ -137,11 +141,11 @@ header .portada .foto-cafe {
     color: var(--colorTextoClaro);
 }
 
-.servicios .separador-servicios {
+.separador{
     padding-bottom: 20px;
     margin: auto;
     width: 50%;
-    border-top: 4px solid var(--colorSecundario);
+    border-top: 4px solid #1d1d1d;
 }
 
 .servicios .items {
@@ -193,6 +197,8 @@ header .portada .foto-cafe {
     background-color: var(--colorPrimario);
 }
 
+/*-------------------NOSOTROS---------------------*/
+
 .contenedor-nosotros {
     background-color: #1d1d1d;
 }
@@ -238,4 +244,322 @@ header .portada .foto-cafe {
 
 .nosotros .foto-brewlab img:hover {
     border: #b8b8b8 solid 3px;
+}
+
+/*-------------------OPINIONES---------------------*/
+
+
+.titulo-opiniones {
+    color: #1d1d1d;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contenedor-opiniones {
+    background-color: #e2e2e2;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.opiniones {
+    display: flex;
+    justify-content: center
+}
+
+.opinion {
+    outline: none;
+    margin: 0px 50px;
+    max-width: 350px;
+    border-radius: 15px;
+    background-color: #1d1d1d;
+    transition:all 0.3s ease;
+}
+
+.opinion img {
+    border-radius: 15px 15px 0px 0px ;
+    width: 100%;
+}
+
+.opinion:hover {
+    transform: scale(1.02);
+}
+
+.contenedor-opinion {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px
+}
+
+.contenedor-opinion .nombre {
+    color: var(--colorPrimario);
+    margin-right: 20px;
+    font-weight: 600;
+}
+
+.contenedor-opinion .estrellas {
+    width: 50%;
+}
+
+.contenedor-opinion .estrella {
+    color: #ffd60a;
+}
+
+.contenedor-opinion .texto {
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+/*-------------------CONTACTO---------------------*/
+
+.contenedor-form {
+    display: flex;
+    justify-content: center;
+    background-color: #E8833F;
+    width: 100%;
+    padding: 60px 0;
+    background: linear-gradient(90deg, var(--colorPrimario) 0%, var(--colorSecundario) 100%)
+}
+
+.titulo-form {
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding-bottom: 15px;
+    font-size: 50px;
+}
+
+.formulario {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea {
+    color: white;
+    background: rgba(255, 255, 255, .2);
+    width: 49%;
+    margin-bottom: 15px;
+    padding: 20px;
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    border-radius: 6px;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+}
+
+.formulario textarea {
+    width: 100%;
+    height: 100px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 300px;
+}
+
+.formulario input[type="text"]:focus,
+.formulario input[type="email"]:focus, 
+.formulario textarea:focus {
+    border: 2px solid #b9b9b9;
+}
+
+.formulario input[type="text"]::placeholder,
+.formulario input[type="email"]::placeholder,
+.formulario textarea::placeholder {
+    color: var(--colorTextoClaro);
+    opacity: .7;
+    font-weight: 300;
+}
+
+.formulario input[type="submit"] {
+    width: 100%;
+    margin: auto;
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px;
+    background: rgba(226, 226, 226, 0.8);
+    border-radius: 30px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.formulario input[type="submit"]:hover {
+    background: var(--colorSecundario);
+    color: white;
+}
+
+/*-------------------FOOTER---------------------*/
+
+footer {
+    font-weight: 300;
+    background-color: #000;
+    color: white;
+    text-align: center;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #b8b8b87f;
+    margin-bottom: 10px;
+}
+
+.contenedor-footer {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.contenedor-footer .nav-footer {
+    flex-direction: column;
+    text-align: start;
+    margin-top: 10px;
+    padding-top:15px ;
+    margin-left: 80px;
+}
+.contenedor-footer .nav-footer a {
+    display: block;
+    text-decoration: none;
+    color: #e2e2e2;
+    font-weight: 400;
+    padding: 5px;
+    transition: ease 0.3s;
+}
+.contenedor-footer .nav-footer a:hover {
+    color: #E8833F;
+}
+
+.contenedor-footer .redes h3{
+    padding-bottom: 20px;
+}
+
+.icono-redes {
+    padding: 0px 15px;
+    transition: ease 0.2s;
+    color: white;
+}
+.icono-redes:hover{
+    color: #E8833F;
+}
+
+/*-------------------MEDIAQUERIES---------------------*/
+
+@media screen and (max-width: 768px){
+    header .barra-menu .logo {
+        margin-right: 0px;
+        width: 120px;
+      }
+
+      header .barra-menu .menu {
+        padding: 0px;
+        font-size: 12px;
+      }
+    
+    header .portada {
+        flex-direction: column;
+    }
+
+    header .portada .foto-cafe img{
+        padding-top: 20px;
+        width: 250px;
+    }
+
+    header .portada .titular-izq {
+        width: 100%;
+        text-align: center;
+    }
+
+    header .portada .titular-izq h1{
+        font-size: 50px;
+    }
+
+    .separador {
+        width: 85%;
+    }
+
+    .servicios .titulo-servicios {
+        line-height: 1;
+    }
+
+    .servicios .subtitulo-servicios {
+        padding-top: 10px;
+    }
+
+    .servicios .items {
+        flex-direction: column;
+    }
+
+    .servicios .item {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .nosotros {
+        flex-direction: column;
+    }
+
+    .nosotros .descripcion {
+        width: 100%;
+    }
+
+    .nosotros .foto-brewlab img {
+        width: 350px;
+        margin-left: 0px;
+    }
+
+    .titulo-opiniones {
+        line-height: 1;
+        margin-bottom: 25px;
+    }
+
+    .opiniones {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .opinion {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .contenedor-opinion .texto{
+        font-size: 14px;
+    }
+
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formulario {
+        width: 95%;
+    }
+
+    .formulario input[type="text"], .formulario input[type="email"], .formulario textarea {
+        width: 100%;
+    }
+
+    footer {
+        padding-bottom: 15px;
+    }
+
+    .contenedor-footer {
+        flex-direction: column;
+    }
+    .redes {
+        margin-top: 25px;
+    }
+
+    .contenedor-footer .nav-footer {
+        margin-left: 0px;
+        text-align: center;
+    }
 }
